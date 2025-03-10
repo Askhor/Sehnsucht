@@ -1,0 +1,89 @@
+% !TeX spellcheck = de_DE
+\documentclass[twocolumn]{article}
+
+\usepackage[german]{babel}
+\usepackage{microtype}
+\usepackage{verse}
+\usepackage{parskip}
+\usepackage{hyperref}
+
+\newcommand{\titlevar}{Ich vermisse dich (Sehnsucht)}
+\newcommand{\authorvar}{Jonathan}
+\newcommand{\datevar}{WS24}
+\title{
+	\vspace{-5cm}
+	\begin{flushleft}
+		\titlevar \quad \raisebox{0.15em}{\normalsize(\authorvar)}
+	\end{flushleft}
+	}
+\date{
+	\vspace{-1.2cm}
+	\begin{flushleft}
+		\datevar
+	\end{flushleft} 
+	}
+\hypersetup{
+	pdftitle=\titlevar,
+	pdfauthor=\authorvar,
+	pdfcreationdate=\datevar,
+}
+\setlength{\parindent}{0pt}
+\newcommand{\neueStrophe}{\rule{0pt}{0pt}\\}
+
+\settowidth{\versewidth}{bist wie Kässpatzen, wenn ich Hunger hab.oooooooooo}
+\newenvironment{Strophe}{\begin{minipage}{\versewidth} \begin{verse}[\versewidth]}{\end{verse} \end{minipage}\vspace{0.5em}}
+
+\begin{document}
+	\maketitle
+	\thispagestyle{empty}
+	
+	\begin{Strophe}
+		Du bist nicht da.
+	\end{Strophe}
+	
+	\begin{Strophe}
+		Nun fehlst du mir so.
+	\end{Strophe}
+	
+	\begin{Strophe}
+		Denn wenn du da bist, \\
+		Schmilzt mein Herz wie Sonne im Schnee. \\
+		Brennt meine Hand wie an 'ner Tasse mit Tee. \\
+		Singt mein—wait, das passt doch nicht ganz! \\
+	\end{Strophe}
+	
+	\begin{Strophe}
+		Du siehst, \\
+		Ich kann nicht klar denken. \\
+		Denn wenn ich denke, \\
+		Denke ich nur an dich. \\
+	\end{Strophe}
+	
+	\begin{Strophe}
+		Doch es gibt auch Sorgen, \\
+		Denn obwohl ich bei dir geborgen, \\
+		Wenn du Angst hast; \\
+	\end{Strophe}
+	
+	\begin{Strophe}
+		Der Druck. \\
+		Dir aufgedrängt, \\
+		Zwingt dich zum Abgrund \\
+		Jedes Mal \\
+	\end{Strophe}
+	
+	\begin{Strophe}
+		Doch das soll weg, \\
+		All der Schmerz \\
+		Und der restliche Dreck \\
+		Ich nehm's gern' in mein Herz  \\
+	\end{Strophe}
+	
+	\begin{Strophe}
+		
+	\end{Strophe}
+	
+	\begin{Strophe}
+		Du fehlst mir so.
+	\end{Strophe}
+\end{document}
